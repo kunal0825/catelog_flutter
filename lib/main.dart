@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
+import 'pages/home_page.dart';
+import 'pages/login_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +20,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     //return CupertinoApp()
     return MaterialApp(
-      home: HomePage(),
+      //home: HomePage(),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primarySwatch: Colors.teal),
+      darkTheme: ThemeData(primarySwatch: Colors.indigo),
+      initialRoute: "/login",
+      routes: {
+        "/": (context) => HomePage(), //ya to home do ya "/" both are same
+        "/login": (context) => LoginPage()
+      },
     );
   }
 }

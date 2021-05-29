@@ -7,11 +7,9 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Catelog App"),
       ),
-      body: Material(
-        child: Center(
-          child: Container(
-            child: Text("Welcome"),
-          ),
+      body: Center(
+        child: Container(
+          child: Text("Welcome"),
         ),
       ),
       drawer: Drawer(),
