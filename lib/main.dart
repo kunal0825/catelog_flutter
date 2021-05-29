@@ -1,8 +1,8 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart'
+import 'package:flutter/material.dart';
+import 'home_page.dart';
 
-void main(){
-  runApp(myApp());
+void main() {
+  runApp(MyApp());
 }
 
 //open cmd -> git config --global user.email "rathodkunal0825@gmail.com"
@@ -14,16 +14,12 @@ void main(){
 // git add .  -> .indicate all files
 // 3 step -> commit file
 // git commit -m "message you want to give, what u have done"
-class myApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //return CupertinoApp()
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(child: Text("Welcome"),),
-        ),
-      ),
-    )
+      home: HomePage(),
+    );
   }
 }
