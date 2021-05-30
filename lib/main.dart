@@ -16,6 +16,9 @@ void main() {
 // git add .  -> .indicate all files
 // 3 step -> commit file
 // git commit -m "message you want to give, what u have done"
+// 4 step -> All commit all the files
+//  git remote add origin https://-----your url--
+// git push
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
