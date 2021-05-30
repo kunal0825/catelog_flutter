@@ -18,7 +18,8 @@ void main() {
 // git commit -m "message you want to give, what u have done"
 // 4 step -> All commit all the files
 //  git remote add origin https://-----your url--
-// git push
+// git push (if already branch is created in git then use this)
+//otherwise used this - git push --set-upstream origin day-3(branch name) 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
